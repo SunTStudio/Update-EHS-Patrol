@@ -14,7 +14,7 @@
 </div>
 
 <div class="wrapper wrapper-content animated fadeInRight">
-    
+
     <div class="row">
         <div class="col-lg-12">
             <div class="ibox ">
@@ -43,6 +43,7 @@
                             <option value="E">E</option>
                             <option value="F">F</option>
                             <option value="G">G</option>
+                            <option value="O">O</option>
                         </select>
                         </div>
 
@@ -76,7 +77,7 @@
                             </select>
                             </div>
                         @endrole
-                        
+
                         <div class="col-sm-4 m-b-xs form-group " id="data_5">
                             <div class="input-daterange input-group" id="datepicker">
                                 <span class="input-group-addon">From</span>
@@ -91,7 +92,7 @@
                     </div>
                     <div class="row mt-3" style="margin-left:0">
                         <div class="col-2 offset-6">
-                            
+
                         </div>
                         <div class="col-sm-2 offset-sm-10 m-3 m-sm-0 text-end">
 
@@ -100,7 +101,7 @@
                             <button class="btn btn-block btn-info compose-mail" type="submit">Export laporan</button>
                         </div>
                     </div>
-                    </form> 
+                    </form>
                                 {{-- start table 1 --}}
                                 <div class="table-responsive mt-3">
                                     <table class="table table-striped table-bordered table-hover dataTables-example">
@@ -116,17 +117,17 @@
                                             <th class="text-center col-1" >Status</th>
                                             <th class="text-center col-1" >Asign To</th>
                                             <th class="text-center col-1" >Action</th>
-                                            
+
                                         </tr>
                                         </thead>
-                                        
+
                                         <tfoot>
-                                                
+
                                         </tfoot>
                                     </table>
                                 </div>
                     {{-- end table 1 --}}
-          
+
                 </div>
                 {{-- end ibox-content --}}
             </div>

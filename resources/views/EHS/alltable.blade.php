@@ -5,7 +5,7 @@
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-10">
         <h2>EHS Patrol</h2>
-        <ol class="breadcrumb"> 
+        <ol class="breadcrumb">
             <li class="breadcrumb-item">
                 <strong>Tabel Semua Temuan</strong>
             </li>
@@ -14,7 +14,7 @@
 </div>
 
 <div class="wrapper wrapper-content animated fadeInRight">
-    
+
     <div class="row">
         <div class="col-lg-12">
             <div class="ibox ">
@@ -42,6 +42,7 @@
                             <option value="E">E</option>
                             <option value="F">F</option>
                             <option value="G">G</option>
+                            <option value="O">O</option>
                         </select>
                         </div>
 
@@ -55,7 +56,7 @@
                             <option value="6">CANCEL</option>
                         </select>
                         </div>
-                        
+
                         <div class="col-sm-2 m-b-xs"><select class="form-control-sm form-control input-s-sm inline" id="area-filter" name="area">
                             <option value="">All Area</option>
                             @foreach($areas as $area)
@@ -63,7 +64,7 @@
                             @endforeach
                         </select>
                         </div>
-                        
+
                         <div class="col-sm-4 m-b-xs form-group " id="data_5">
                             <div class="input-daterange input-group" id="datepicker">
                                 <span class="input-group-addon">From</span>
@@ -78,18 +79,18 @@
                     </div>
                     <div class="row mt-3" style="margin-left:0">
                         <div class="col-2 offset-6">
-                            
+
                         </div>
                         <div class="col-sm-2 offset-sm-10 m-3 m-sm-0 text-end">
-                            
+
                         </div>
                         <div class="col-sm-2 mx-3 m-sm-0 text-end">
                             <button class="btn btn-block btn-info compose-mail" type="submit">Export laporan</button>
                         </div>
                     </div>
                     <input type="hidden" name="tipe_tabel" id="tipeTable" value="semua">
-                    </form> 
-                    
+                    </form>
+
                     <div class="col-sm-1">
                     </div>
                                 {{-- start table 1 --}}
@@ -109,14 +110,14 @@
                                 <th class="text-center col-1" >Action</th>
                             </tr>
                             </thead>
-                            
+
                             <tfoot>
-                                    
+
                             </tfoot>
                         </table>
                     </div>
                     {{-- end table 1 --}}
-          
+
                 </div>
                 {{-- end ibox-content --}}
             </div>

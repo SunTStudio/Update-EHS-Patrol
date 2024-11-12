@@ -24,7 +24,7 @@ class CreateLaporansTable extends Migration
             $table->integer('team_id')->nullable();
             $table->integer('area_id')->references('id')->on('areas');
             $table->enum('rank', ['A', 'B', 'C']);
-            $table->enum('kategori', ['5R', 'A', 'B', 'C', 'D', 'E', 'F', 'G']);
+            $table->enum('kategori', ['5R', 'A', 'B', 'C', 'D', 'E', 'F', 'G','O']);
             $table->text('temuan')->nullable();
             $table->integer('analisis_genba_id')->nullable()->references('id')->on('analisis_genba');
             $table->string('foto_temuan')->nullable();

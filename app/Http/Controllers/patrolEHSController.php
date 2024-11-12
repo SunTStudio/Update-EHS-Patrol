@@ -426,7 +426,7 @@ class patrolEHSController extends Controller
             foreach($users as $user){
                 if($user->hasRole('EHS')){
                     // Mail::to('mahsunmuh0@gmail.com')->send(new approvePIC($laporan));
-                    Mail::to($user->email)->send(new approvePIC($laporan));
+                    Mail::to($user->email)->send(new approvePIC($laporan,$count));
                 }
             }
         } else {
@@ -457,7 +457,6 @@ class patrolEHSController extends Controller
 
         $laporan = ehs_patrol::where('id', $request->patrol_id)->first();
 
-        // Mail::to('mahsunmuh0@gmail.com')->send(new approvePIC($laporan,$count));
         Mail::to($laporan->temuan[0]->auditor->email)->send(new approvePIC($laporan,$count));
 
     session()->flash('success', 'Pesan email permintaan Verifikasi telah dikirim kepada EHS yang bersangkutan');
@@ -475,7 +474,6 @@ class patrolEHSController extends Controller
         foreach($users as $user){
             if($user->hasRole(['Departement Head EHS'])){
 
-                // Mail::to("mahsunmuh0@gmail.com")->send(new verifyEHSMail($laporan,$count));
                 Mail::to($user->email)->send(new verifyEHSMail($laporan,$count));
             }
         }
@@ -506,7 +504,6 @@ class patrolEHSController extends Controller
         foreach($users as $user){
             if($user->hasRole(['Departement Head EHS'])){
 
-                // Mail::to("mahsunmuh0@gmail.com")->send(new verifyEHSMail($laporan,$count));
                 Mail::to($user->email)->send(new verifyEHSMail($laporan,$count));
             }
         }
